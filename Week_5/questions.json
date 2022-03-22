@@ -1,6 +1,10 @@
-"teamnames": [{
-    "Dolphins",
-    "Chiefs",
-    "Bangels"
-}
+{
+    "teamname": [
+      {
+        "name": "C-A-L Ranch"
+      },
+      {
+        "name": "Ogden Nature Center"
+    }
 ]
+}
