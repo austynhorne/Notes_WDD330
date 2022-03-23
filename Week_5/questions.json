@@ -1,10 +1,11 @@
 {
-    "Teamname": [
-      {
-        "name": "C-A-L Ranch"
-      },
-      {
-        "name": "Ogden Nature Center"
-    }
-]
+	"questions": [{
+			"Location": "Miami",
+			"Teamname": "Dolphins"
+		},
+		{
+			"Location": "Kansas City",
+			"Teamname": "Chiefs"
+		}
+	]
 }

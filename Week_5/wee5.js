@@ -2,8 +2,8 @@ fetch('https://austynhorne.github.io/Notes_WDD330/Week_5/questions.json')
 .then((response) => response.json())
 .then((jsObject) => {
   console.table(jsObject);
-  const teamname = jsObject["Teamname"];
-  for (let i = 0; i < Teamname.length; i++) {
+  const business = jsObject["Business"];
+  for (let i = 0; i < Business.length; i++) {
   }
-  document.getElementById('name1').textContent = jsObject.Teamname[0].name;
+  document.getElementById('name1').textContent = jsObject.Business[0].name;
 });
