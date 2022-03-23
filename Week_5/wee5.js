@@ -1,20 +1,24 @@
- fetch('https://austynhorne.github.io/Notes_WDD330/Week_5/questions.json')
- .then((response) => response.json())
- .then((jsObject) => {
-  console.table(jsObject);
-  const question = jsObject["Question"];
-  for (let i = 0; i < question.length; i++) {
-  }
- });
+let questions;
+fetch('https://austynhorne.github.io/Notes_WDD330/Week_5/questions.json')
+.then((response) => response.json())
+.then((jsObject) => {
+console.table(jsObject);
+questions = jsObject["Question"];
+});
 function myFunction() {
-  let letter = document.getElementById("myInput").value;
-  let text;
+let city = document.getElementById("myInput").value;
+let text;
 
-  if (letter === "location1") {
-    text = "Right";
-    
-  } else {
-    text = "Wrong";
-  }
-  document.getElementById("nfl").innerHTML = text;
+for (let i = 0; i < questions.length; i++) {
+if (questions[i].location === city){
+text = "Right";
+break;
+} else if (questions[0].location < city){
+text = "Right city, wrong state.";
+break;
+}else {
+text = "Wrong";
+}
+}
+document.getElementById("nfl").innerHTML = text;
 }
