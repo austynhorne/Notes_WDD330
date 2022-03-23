@@ -1,35 +1,20 @@
-fetch('https://austynhorne.github.io/Notes_WDD330/Week_5/questions.json')
-.then((response) => response.json())
-.then((jsObject) => {
+ fetch('https://austynhorne.github.io/Notes_WDD330/Week_5/questions.json')
+ .then((response) => response.json())
+ .then((jsObject) => {
   console.table(jsObject);
-  const business = jsObject["Business"];
-  for (let i = 0; i < business.length; i++) {
+  const question = jsObject["Question"];
+  for (let i = 0; i < question.length; i++) {
   }
-  document.getElementById('name1').textContent = jsObject.Business[0].name;
-  document.getElementById('Address1').textContent = jsObject.Business[0].Address;
-  document.getElementById('phone1').textContent = jsObject.Business[0].Phone;
+ });
+function myFunction() {
+  let letter = document.getElementById("myInput").value;
+  let text;
 
-  document.getElementById('name2').textContent = jsObject.Business[1].name;
-  document.getElementById('Address2').textContent = jsObject.Business[1].Address;
-  document.getElementById('phone2').textContent = jsObject.Business[1].Phone;
-
-  document.getElementById('name3').textContent = jsObject.Business[2].name;
-  document.getElementById('Address3').textContent = jsObject.Business[2].Address;
-  document.getElementById('phone3').textContent = jsObject.Business[2].Phone;
-
-  document.getElementById('name4').textContent = jsObject.Business[3].name;
-  document.getElementById('Address4').textContent = jsObject.Business[3].Address;
-  document.getElementById('phone4').textContent = jsObject.Business[3].Phone;
-
-  document.getElementById('name5').textContent = jsObject.Business[4].name;
-  document.getElementById('Address5').textContent = jsObject.Business[4].Address;
-  document.getElementById('phone5').textContent = jsObject.Business[4].Phone;
-
-  document.getElementById('name6').textContent = jsObject.Business[5].name;
-  document.getElementById('Address6').textContent = jsObject.Business[5].Address;
-  document.getElementById('phone6').textContent = jsObject.Business[5].Phone;
-
-  document.getElementById('name7').textContent = jsObject.Business[6].name;
-  document.getElementById('Address7').textContent = jsObject.Business[6].Address;
-  document.getElementById('phone7').textContent = jsObject.Business[6].Phone;
-});
+  if (letter === "location1") {
+    text = "Right";
+    
+  } else {
+    text = "Wrong";
+  }
+  document.getElementById("nfl").innerHTML = text;
+}
