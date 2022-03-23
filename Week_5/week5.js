@@ -13,7 +13,7 @@ for (let i = 0; i < questions.length; i++) {
 if (questions[0].location === city){
 text = "Right";
 break;
-} else if (questions[1].location === city || questions[2].location === city){
+} else if (questions[1].location === city){
 text = "Right city, wrong state.";
 break;
 }else {

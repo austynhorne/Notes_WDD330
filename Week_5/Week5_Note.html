@@ -5,13 +5,29 @@
   <meta name="description" content="Notes For WDD330">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Notes For WDD330</title>
+  <link rel="stylesheet" href="Week5.css">
 </head>
 <body>
-  <p>Where to the Dolphins play football?</p>
-  <input id="myInput" type="text">
-  <button onclick="myFunction()">Submit</button>
-  <p id="nfl"></p>
-    <script src="wee5.js"></script>
+  <h2 id="example">Example</h2>
+  <div class="example">
+    <p>Where to the Dolphins play football?</p>
+    <input id="myInput" type="text">
+    <button onclick="myFunction()">Submit</button>
+    <p id="nfl"></p>
+    <canvas id="canvas">Your browser does not support the canvas element.</canvas>
+  </div>
+  <h2 id="notes">Notes</h2>
+  <div class="notes">
+    <p>
+      • If a browser supports the Web Storage API, the window object will have a property called localStorage, which is a native object with a number of properties and methods used to store data<br>
+      All drawing on the HTML canvas must be done with JavaScript:<br>
+      • you need a drawing object for the canvas. The getContext() is a built-in HTML object, with properties and methods for drawing:<br>
+      • The fillStyle property can be a CSS color, a gradient, or a pattern. The default fillStyle is black.<br>
+      • The fillRect(x,y,width,height) method draws a rectangle, filled with the fill style, on the canvas
+    </p>
+  </div>
+    <script src="week5.js"></script>
+    <script src="canvas.js"></script>
 </body>
 
 <html>
