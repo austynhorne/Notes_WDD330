@@ -1,12 +1,13 @@
 {
   "Question": [
     {
-      "location": "Miami",
-      "name": "Dolphins"
+      "location": "Miami"
     },
     {
-      "location": "Kansas City",
-      "name": "Chiefs"
+      "location": "Tampa Bay"
+    },
+    {
+      "location": "Jacksonville"
     }
-  ]
+    ]
 }
